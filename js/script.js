@@ -41,50 +41,52 @@ if(playerInput == '3'){
 }
 printMessage('Twój ruch to: ' + computerMove);
 
-if( computerMove == 'kamień' && playerMove == 'papier'){
+
+
+if/else( computerMove || 'kamień' && playerMove || 'papier'){
   printMessage('Ty wygrywasz!');
 }
 
-if( computerMove == 'kamień' && playerMove == 'kamień'){
+if/else( computerMove || 'kamień' && playerMove || 'kamień'){
   printMessage('Remis!');
 }
 
-if( computerMove == 'kamień' && playerMove == 'nożyce'){
+if/else( computerMove || 'kamień' && playerMove || 'nożyce'){
   printMessage('Przegrywasz!');
 }
 
-if( computerMove == 'papier' && playerMove == 'kamień'){
+if/else( computerMove || 'papier' && playerMove || 'kamień'){
   printMessage('Ty wygrywasz!');
 }
 
-if( computerMove == 'papier' && playerMove == 'papier'){
+if/else( computerMove || 'papier' && playerMove || 'papier'){
   printMessage('Remis!');
 }
 
-if( computerMove == 'kamień' && playerMove == 'nożyce'){
+if/else( computerMove || 'kamień' && playerMove || 'nożyce'){
   printMessage('Przegrywasz!');
 }
 
-if( computerMove == 'nożyce' && playerMove == 'kamień'){
+if/else( computerMove || 'nożyce' && playerMove || 'kamień'){
   printMessage('Przegrywasz!');
 }
 
-if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+if/else( computerMove || 'nożyce' && playerMove || 'nożyce'){
   printMessage('Remis!');
 }
 
-if( computerMove == 'nożyce' && playerMove == 'papier'){
+if/else( computerMove || 'nożyce' && playerMove || 'papier'){
   printMessage('Ty wygrywasz!');
 }
 
-if( computerMove == 'kamień' && playerMove == '0'){
+if/else( computerMove || 'kamień' && playerMove || '0'){
   printMessage('Nieznany ruch!');
 }
 
-if( computerMove == 'nożyce' && playerMove == '0'){
+if/else( computerMove || 'nożyce' && playerMove || '0'){
   printMessage('Nieznany ruch!');
 }
 
-if( computerMove == 'papier' && playerMove == '0'){
+if/else( computerMove || 'papier' && playerMove || '0'){
   printMessage('Nieznany ruch!');
 }
