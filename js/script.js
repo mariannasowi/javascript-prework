@@ -42,51 +42,23 @@ if(playerInput == '3'){
 printMessage('Twój ruch to: ' + computerMove);
 
 
+const p1 = (computerMove == 'kamień' && playerMove == 'papier');
+const p2 = (computerMove == 'papier' && playerMove == 'nożyce');
+const p3 = (computerMove == 'nożyce' && playerMove == 'kamień');
 
-if/else( computerMove || 'kamień' && playerMove || 'papier'){
+const r1 = (computerMove == 'kamień' && playerMove == 'kamień');
+const r2 = (computerMove == 'papier' && playerMove == 'papier');
+const r3 = (computerMove == 'nożyce' && playerMove == 'nożyce');
+
+const n1 = (computerMove == 'kamień' && playerMove == '0')
+const n2 = (computerMove == 'nożyce' && playerMove == '0')
+const n3 = (computerMove == 'papier' && playerMove == '0')
+
+if(p1 || p2 || p3){
   printMessage('Ty wygrywasz!');
-}
-
-if/else( computerMove || 'kamień' && playerMove || 'kamień'){
+} else if (r1 || r2 || r3 || n1 || n2 || n3){
   printMessage('Remis!');
-}
-
-if/else( computerMove || 'kamień' && playerMove || 'nożyce'){
-  printMessage('Przegrywasz!');
-}
-
-if/else( computerMove || 'papier' && playerMove || 'kamień'){
-  printMessage('Ty wygrywasz!');
-}
-
-if/else( computerMove || 'papier' && playerMove || 'papier'){
-  printMessage('Remis!');
-}
-
-if/else( computerMove || 'kamień' && playerMove || 'nożyce'){
-  printMessage('Przegrywasz!');
-}
-
-if/else( computerMove || 'nożyce' && playerMove || 'kamień'){
-  printMessage('Przegrywasz!');
-}
-
-if/else( computerMove || 'nożyce' && playerMove || 'nożyce'){
-  printMessage('Remis!');
-}
-
-if/else( computerMove || 'nożyce' && playerMove || 'papier'){
-  printMessage('Ty wygrywasz!');
-}
-
-if/else( computerMove || 'kamień' && playerMove || '0'){
-  printMessage('Nieznany ruch!');
-}
-
-if/else( computerMove || 'nożyce' && playerMove || '0'){
-  printMessage('Nieznany ruch!');
-}
-
-if/else( computerMove || 'papier' && playerMove || '0'){
+  printMessage('Przegrywasz!')
+} else {
   printMessage('Nieznany ruch!');
 }
