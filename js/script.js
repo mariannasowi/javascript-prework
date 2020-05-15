@@ -54,14 +54,15 @@ const n1 = (computerMove == 'kamień' && playerMove == '0')
 const n2 = (computerMove == 'nożyce' && playerMove == '0')
 const n3 = (computerMove == 'papier' && playerMove == '0')
 
-/*if(p1 || p2 || p3){
+if(p1 || p2 || p3){
   printMessage('Ty wygrywasz!');
-} else if (r1 || r2 || r3 || n1 || n2 || n3){
+} else if (r1 || r2 || r3){
   printMessage('Remis!');
+} else if (n1 || n2 || n3) {
   printMessage('Przegrywasz!')
 } else {
   printMessage('Nieznany ruch!');
-}*/
+}
 
 function getMoveName(MoveId){
   if(MoveId == 2){
