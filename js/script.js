@@ -10,7 +10,7 @@ if(randomNumber == '1'){
 printMessage('Mój ruch to: ' + argComputerMove);
 
 if(playerInput == '2'){
-  argplayerMove = 'papier';
+  argPlayerMove = 'papier';
 }
 printMessage('Twój ruch to: ' + argComputerMove);
 
@@ -24,22 +24,22 @@ let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.
 
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = getMoveName(playerInput);
+let argPlayerMove = getMoveName(playerInput);
 
 if(playerInput == '1'){
-  playerMove = 'kamień';
+  argPlayerMove = 'kamień';
 }
-printMessage('Twój ruch to: ' + computerMove);
+printMessage('Twój ruch to: ' + argComputerMove);
 
 if(playerInput == '2'){
-  playerMove = 'papier';
+  argPlayerMove = 'papier';
 }
-printMessage('Twój ruch to: ' + computerMove);
+printMessage('Twój ruch to: ' + argComputerMove);
 
 if(playerInput == '3'){
-  playerMove = 'nożyce';
+  argPlayerMove = 'nożyce';
 }
-printMessage('Twój ruch to: ' + computerMove);
+printMessage('Twój ruch to: ' + argComputerMove);
 
 
 const p1 = (argComputerMove == 'kamień' && argPlayerMove == 'papier');
@@ -64,10 +64,10 @@ if (p1 || p2 || p3){
   printMessage('Nieznany ruch!');
 }
 
-function displayResult (moveId){
-  if (moveId == 2){
+function displayResult (argComputerMove, argPlayerMove){
+  if (argComputerMove, argPlayerMove == 2){
     return 'papier';
-  } else if (moveId == 3){
+  } else if (argComputerMove, argPlayerMove == 3){
     return 'nożyce';
   }
 }
