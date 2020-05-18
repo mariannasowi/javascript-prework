@@ -43,17 +43,19 @@ function playGame (playerInput){
   }
 }
 
-let playRockButton = document.getElementById ("play-rock");
+playGame(3);
+
+/*let playRockButton = document.getElementById ("play-rock");
 playRockButton.addEventListener('click', function(){
-  playGame('1');
+  clearMessages('Guzik został kliknięty 1');
 });
 
 let playPaperButton = document.getElementById ("play-paper");
 playPaperButton.addEventListener('click', function(){
-  playGame('2');
+  clearMessages('Guzik został kliknięty 2');
 });
 
 let playScissorsButton = document.getElementById ("play-scissors");
 playScissorsButton.addEventListener('click', function(){
-  playGame('3');
-});
+  clearMessages('Guzik został kliknięty 3');
+});*/
