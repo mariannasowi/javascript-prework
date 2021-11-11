@@ -39,6 +39,6 @@
     "onchange": "^7.0.2"
   },
   "dependencies": {
-    "html-validate": "^2.21.0"
+    "html-validate": "^6.1.1"
   }
 }
